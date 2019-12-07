@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+/********************************************************* Меню ********************************************************/
+#menu{
+	width: 100%;
+  height: 50px;
+	background: #6ecafff2;
+	box-shadow: 0 0 25px 1px #000;
+  text-align: center;
+}
+#menu-button{
+  margin: 0 auto;
+  display: inline-block;
+}
+#menu-button li{
+	list-style: none;
+  float: left;
+  padding: 11px 25px;
+  transition: .2s;
+}
+#menu-button a{
+	font: 24px "Century Gothic";
+	text-decoration: none;
+	color: #fff;
+	padding: 11px;
+  transition: .2s linear;
+  cursor: pointer;
+}
+#menu-button a:hover{
+	color: #ff6e6e;
+	background: #549bc5;
+	padding: 11px;
+}
+#menu-button li:active{
+  transform: scale(1.3);
+}
+
+/**************************************************** Игровые плитки ************************************************/
+#game{
+  margin-top: 50px;
+}
+#tile{
+  margin-left: auto;
+  margin-right: auto;
+}
+.BG {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  transition: 0.2s;
+  color: #adadad;
+  background-color: #adadad;
+}
+.BG:hover{
+  transform: scale(1.1);
+}
+
+.BG:active{
+  transform: scale(1.3);
+}
+
+/************************************************** Меню размера поля *******************************************/
+.sizeG:active{
+  transform: scale(1.3);
+}
+#shadowSize {
+  background: rgba(46, 39, 39, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#windowSize {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid #ff0055;
+  border-radius: 10px;
+  color: #0000cc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+}
+#shadowSize:target {display: block;}
+.sizeG {
+  padding: 5px 12px;
+  margin: 10px;
+  width: 35px;
+  display: inline-block;
+  border: 1px solid #ff0055;
+  border-radius: 10px;
+  background: #f2f2f2;
+  color: #0000cc;
+  font-size: 18px;
+  text-decoration: none;
+  cursor:pointer;
+  outline: none;
+  transition: 0.2s;
+}
+.sizeG:hover {
+  transform: scale(1.1);
+  background-color: rgb(87, 87, 87);
+  color: cyan;
+  background: #e6e6ff;
+}
+#textPole{
+  margin: 5px;
+  font-size: 25px;
+}
+
+/******************************************** Правила ************************************************/
+#windowRul {
+  background: rgba(46, 39, 39, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#rul {
+  width: 700px;
+  height: 120px;
+  text-align: center;
+  padding: 15px;
+  border: 5px dashed;
+  font-size: 25px;
+  border-radius: 10px;
+  background: #fff;
+  color: #ff002b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#windowRul:target {display: block;}
+
+/************************************************* Меню рекорды *********************************************/
